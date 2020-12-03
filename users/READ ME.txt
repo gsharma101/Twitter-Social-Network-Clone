@@ -1,0 +1,1 @@
+In this folder user files like profileimage,cover image will be uploaded don't delete it.
