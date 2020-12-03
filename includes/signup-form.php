@@ -1,7 +1,4 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'GET' && realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
-	header('Location:../index.php');
-}
 if (isset($_POST['Signup'])) {
 	$screenName = $_POST['screen_Name'];
 	$email = $_POST['Email'];
