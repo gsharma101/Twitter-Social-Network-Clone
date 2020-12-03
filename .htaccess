@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ profile.php?username=$1
+RewriteRule ^hashtag/([a-zA-Z0-9_-]+)/?$ hashtag.php?hashtag=$1
+RewriteRule ^settings/account/?$ account.php
+RewriteRule ^settings/password/?$ password.php
+RewriteRule ^([a-zA-Z0-9_-]+)/(following|followers)?$ $2.php?username=$1       
+RewriteRule ^i/notifications/?$ notificationPage.php                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
